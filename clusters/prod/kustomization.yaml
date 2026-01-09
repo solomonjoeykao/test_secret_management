@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   - infra/sources.yaml
   - infra/ingress-nginx.yaml
-  - infra/vault.yaml
-  - infra/grafana.yaml
+    #  - infra/vault.yaml
+    #  - infra/grafana.yaml
 
