@@ -1,0 +1,16 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  annotations:
+    reconcile.fluxcd.io/requestedAt: "2026-01-15T10:44:49.749911753Z"
+  name: monitoring-example
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  secretRef:
+    name: flux-system
+  timeout: 1m0s
+  url: https://github.com/solomonjoeykao/flux2-monitoring-example.git
